@@ -133,7 +133,7 @@ StScrollView.hfade {
  * PopupMenu (popupMenu.js)
  * ===================================================================*/
  
- .menu {
+.menu {
 	color: #f0f0f0;
 	border-width: 1px;
 	border-color: rgba(40, 40, 40, 0.3);
@@ -159,7 +159,7 @@ StScrollView.hfade {
 
 .menu StEntry {
     padding: 4px 12px;
-    color: #2b2b2b;
+    color: #c2c2c2;
     border-image: url("misc-assets/entry.png") 6;
     border-radius: 4px;
     width: 250px;
@@ -189,8 +189,8 @@ StScrollView.hfade {
 }
 
 .popup-sub-menu {
-  background-color: #404040;
-  box-shadow: none; 
+    border-image: url("background-assets/sub-menu.png") 4;
+    padding: 0.5em 0em;
 }
 
 .popup-sub-menu .popup-menu-item:ltr {
@@ -215,12 +215,12 @@ StScrollView.hfade {
 }
 
 .popup-combo-menu {
-  color: #f0f0f0;
-  border: 1px solid #202020;
-  border-radius: 3px;
-  background-color: #404040;
-  box-shadow: none;
-  padding: 1em 0.1em; }
+    background-color: #404040;
+    padding: 1em 0.1em;
+    color: #f0f0f0;
+    border: 1px solid rgba(40, 40, 40, 0.4);
+    border-radius: 4px;
+}
   
 /* The remaining popup-menu sizing is all done in ems, so that if you
  * override .popup-menu.font-size, everything else will scale with it.
@@ -253,44 +253,18 @@ StScrollView.hfade {
     color: rgba(240, 240, 240, 0.45); 
 }
 
-/* This is for popup menus in Cinnamon versions < 3.2 */
-.popup-menu {
-  color: white;
-  color: #f0f0f0; }
-  .popup-menu-arrow {
-    icon-size: 16px; }
-  .popup-menu .popup-sub-menu {
-    background-color: #404040;
-    box-shadow: none; }
-    .popup-menu .popup-sub-menu .popup-menu-item:ltr {
-      padding-right: 1.75em; }
-    .popup-menu .popup-sub-menu .popup-menu-item:rtl {
-      padding-left: 1.75em; }
-    .popup-menu .popup-sub-menu StScrollBar {
-      padding: 4px; }
-      .popup-menu .popup-sub-menu StScrollBar StBin#trough, .popup-menu .popup-sub-menu StScrollBar StBin#vhandle {
-        border-width: 0; }
-  .popup-menu .popup-menu-content {
-    padding: 1em 0em 1em 0em; }
-  .popup-menu .popup-menu-item {
-    padding: .4em 1.75em;
-    spacing: 1em;
-    border: 1px solid transparent;
-    border-left-width: 0;
-    border-right-width: 0; }
-    .popup-menu .popup-menu-item:active {
-      color: #f0f0f0;
-      border-color: rgba(240, 240, 240, 0.11);
-      background-color: rgba(240, 240, 240, 0.08); }
-    .popup-menu .popup-menu-item:insensitive {
-      color: rgba(240, 240, 240, 0.5);
-      background: none; }
-  .popup-menu .popup-inactive-menu-item {
-    color: #f0f0f0; }
-    .popup-menu .popup-inactive-menu-item:insensitive {
-      color: rgba(240, 240, 240, 0.45); }
-  .popup-menu-icon {
-    icon-size: 16px; }
+.popup-slider-menu-item {
+    border-image: url("misc-assets/slider.png") 10 10 9 9 stretch;
+    height: 18px;
+    min-width: 15em;
+    -slider-height: 4px;
+    -slider-background-color: rgba(0, 0, 0, 0);
+    -slider-border-color: rgba(0, 0, 0, 0);
+    -slider-active-background-color: #accd8a;
+    -slider-active-border-color: rgba(0, 0, 0, 0);
+    -slider-border-width: 1px;
+    -slider-handle-radius: 6px;
+}
 
 .popup-menu-boxpointer {
   -arrow-border-radius: 3px;
@@ -315,17 +289,26 @@ StScrollView.hfade {
   -margin-horizontal: 0;
   height: 1px; }
 
-.popup-alternating-menu-item:alternate {
-  font-weight: normal; }
+  .popup-alternating-menu-item:alternate {
+    font-weight: bold;
+    color: rgb(222, 222, 222);
+}
 
 .popup-device-menu-item {
   spacing: .5em; }
 
 .popup-subtitle-menu-item {
-  font-weight: normal; }
+    font-weight: bold;
+    color: rgb(222, 222, 222);
+}
+.popup-menu-icon {
+    icon-size: 1em;
+}
 
 .nm-menu-item-icons {
-  spacing: .5em; }
+    spacing: .5em;
+}
+
 
 /* ===================================================================
  * Panel (panel.js)
@@ -930,6 +913,7 @@ StScrollView.hfade {
     border-radius: 18px;
     min-width: 5em;
     padding: 5px;
+	color: #fff;
 }
 
 .notification-button:focus {
@@ -1589,11 +1573,12 @@ StScrollView.hfade {
 
 .menu-search-entry-icon {
     icon-size: 1em;
-    color: #2b2b2b;
+    color: #e6e6e6;
 }
 
 .menu-context-menu {
 }
+
 
 /* ===================================================================
  * Window list applet (window-list@cinnamon.org/applet.js)
@@ -1906,7 +1891,7 @@ StScrollView.hfade {
     width: 22px;
     height: 22px;
     padding: 5px;
-    color: #464646;
+    color: #d4d4d4;
 }
 
 .sound-player StButton:small {
@@ -1918,16 +1903,16 @@ StScrollView.hfade {
 
 .sound-player StButton:hover,
 .sound-player StButton:active {
-    color: rgba(102, 102, 102, 0.4);
+    color: #fff;
 }
 
 .sound-player StButton:small:hover {
-    color: rgb(102, 102, 102);
+    color: rgb(230, 230, 230);
     border-image: url("button-assets/button-hover.png") 4;
 }
 
 .sound-player StButton:small:active {
-    color: rgb(79, 79, 79);
+    color: rgb(250, 250, 250);
     border-image: url("button-assets/button-pressed.png") 4;
 }
 
@@ -1958,12 +1943,10 @@ StScrollView.hfade {
 }
 
 .sound-player-overlay {
-    border-top: 1px solid #c2c2c2;
-    width: 300px;
-    padding: 16px;
-    spacing: 0.5em;
-    color: #464646;
-    background: #ececec;
+  width: 300px;
+  padding: 0.7em 1em;
+  background-color: rgba(30, 30, 30, 0.8);
+  color: #ffffff; 
 }
 
 .sound-player-overlay StBoxLayout {
