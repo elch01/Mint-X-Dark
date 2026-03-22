@@ -1592,7 +1592,7 @@ treeview.view {
     border-radius: 0;
     border-color: #050505;
     background-color: transparent;
-    background-image: linear-gradient(to bottom, #777777, #cbcbcb);
+    background-image: linear-gradient(to bottom, #cbcbcb, #777777);
     color: #ffffff; }
   treeview.view:disabled {
     color: #939393; }
@@ -1673,7 +1673,7 @@ menubar,
       border-color: #1f1f1f;
       border-radius: 3px 3px 0 0;
       background-color: transparent;
-      background-image: linear-gradient(to bottom, #777777, #cbcbcb);
+      background-image: linear-gradient(to bottom, #cbcbcb, #777777);
       color: #ffffff; }
     menubar > menuitem:disabled,
     .menubar > menuitem:disabled {
@@ -1711,7 +1711,7 @@ menu,
     .context-menu menuitem:hover {
       color: #ffffff;
       border-color: #050505;
-      background-image: linear-gradient(to bottom, #777777, #cbcbcb); }
+      background-image: linear-gradient(to bottom, #cbcbcb, #777777); }
     menu menuitem:disabled,
     .menu menuitem:disabled,
     .context-menu menuitem:disabled {

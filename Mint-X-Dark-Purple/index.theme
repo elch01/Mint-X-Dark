@@ -5,7 +5,7 @@ Comment=A Linux Mint theme with brushed metal in mintMenu, based on Clearlooks R
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Mint-X-Dark
-MetacityTheme=Mint-X-Dark
-IconTheme=Mint-X
+GtkTheme=Mint-X-Dark-Purple
+MetacityTheme=Mint-X-Dark-Purple
+IconTheme=Mint-X-Purple
 CursorTheme=default

@@ -135,11 +135,13 @@ StScrollView.hfade {
  
 .menu {
 	color: #f0f0f0;
-	border-width: 1px;
-	border-color: rgba(40,40,40,0.3);
-	background-color: #323232;
+	background-gradient-direction: vertical;
+	background-gradient-start: rgb(68, 68, 68);
+	background-gradient-end: rgb(52, 52, 52);
+	border-top: 1px solid rgb(99, 99, 99);
 	min-width: 100px;
 }
+
 
 .menu.top {
     border-radius: 0 0 4px 4px;
@@ -386,20 +388,45 @@ StScrollView.hfade {
     padding-left: 0px;
 }
 
-.panel-top,
-.panel-bottom {
+.panel-top {
+
     background-gradient-direction: vertical;
-    background-gradient-end: rgb(24,24,24);
-    background-gradient-start: rgb(49,49,49);
-    box-shadow: 0px 0px 1px 1px rgba(40,40,40,0.4);
+    background-gradient-start: rgb(42, 42, 42);
+    background-gradient-end:  rgb(68, 68, 68);
+    border: solid rgb(99, 99, 99);
+    border-bottom-width: 1px;
+    box-shadow: 0px 0px 1px 1px rgba(40, 40, 40, 0.4);
+
 }
 
-.panel-left,
-.panel-right {
+.panel-bottom {
+
+    background-gradient-direction: vertical;
+    background-gradient-start: rgb(68, 68, 68);
+    background-gradient-end: rgb(42, 42, 42);
+    border-top: 1px solid rgb(99, 99, 99);
+    box-shadow: 0px 0px 1px 1px rgba(40, 40, 40, 0.4);
+
+}
+
+.panel-left {
+
     background-gradient-direction: horizontal;
-    background-gradient-end: rgb(24,24,24);
-    background-gradient-start: rgb(49,49,49);
-    box-shadow: 0px 0px 1px 1px rgba(40,40,40,0.4);
+    background-gradient-start: rgb(42, 42, 42);
+    background-gradient-end: rgb(68, 68, 68);
+    border: solid rgb(99, 99, 99);
+    border-right-width: 1px;
+    box-shadow: 0px 0px 1px 1px rgba(40, 40, 40, 0.4);
+
+}
+.panel-right {
+
+    background-gradient-direction: horizontal;
+    background-gradient-start: rgb(68, 68, 68);
+    background-gradient-end: rgb(42, 42, 42);
+    border: solid rgb(99, 99, 99);
+    border-left-width: 1px;
+    box-shadow: 0px 0px 1px 1px rgba(40, 40, 40, 0.4);
 }
 
 .system-status-icon {
@@ -2152,7 +2179,7 @@ StScrollView.hfade {
  
  .applet-separator {
   border-image: url("panel-assets/separator.png") 4 5 0 2 stretch;
-  padding: 5px 4px;
+  padding: 0px 4px;
 }
 
 .applet-separator-line {
@@ -2684,7 +2711,7 @@ StScrollView.hfade {
   padding: 0;
   background-gradient-direction: vertical;
   background-gradient-start: rgb(63, 63, 63);
-  background-gradient-end: rgb(50, 50, 50);
+  background-gradient-end: rgb(56, 56, 56);
 }
 
 .appmenu-main-box {
@@ -2726,7 +2753,7 @@ StScrollView.hfade {
     /*background-color: #323232;*/
     background-gradient-direction: vertical;
     background-gradient-start: rgb(77, 77, 77);
-    background-gradient-end: rgb(63, 63, 63);
+    background-gradient-end: rgb(65, 65, 65);
     border: 1px solid rgba(40, 40, 40, 0.3);
     border-radius: 4px 0 0 4px;
     border-right-width: 1px;
@@ -2752,7 +2779,7 @@ StScrollView.hfade {
 
 .appmenu-application-button-description {
     font-size: 0.9em;
-    color: rgb(110, 110, 110);
+    color: rgb(196, 196, 196);
 }
 
 .appmenu-application-button-description:ltr {
@@ -2855,9 +2882,10 @@ StScrollView.hfade {
 
 .appmenu-search-entry-icon {
     icon-size: 1em;
-    color: #2b2b2b;
+    color: #a8a8a8;
 }
 
 #appmenu-search-entry StLabel.hint-text {
-    color: rgba(70, 70, 70, 0.3);
+    color: rgba(119, 119, 119, 0.3);
 }
+
