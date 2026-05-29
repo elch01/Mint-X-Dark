@@ -286,8 +286,8 @@ StScrollView.hfade {
 
 .popup-separator-menu-item {
   -gradient-height: 1px;
-  -gradient-start: #000000;
-  -gradient-end: #202020;
+  -gradient-start: #242424;
+  -gradient-end: #242424;
   -margin-horizontal: 0;
   height: 1px; }
 
@@ -2277,15 +2277,15 @@ StScrollView.hfade {
      min-width: 160px;
      -barlevel-height: 0.7em;
      -barlevel-background-color: rgba(222,222,222,0.4);
-     -barlevel-active-background-color: rgb(116,150,81);
-     -barlevel-amplify-color: rgb(116,150,81);
+     -barlevel-active-background-color: rgba(108,171,205,1.0);
+     -barlevel-amplify-color: rgba(108,171,205,1.0);
      border-radius: 0.3em;
      background-color: rgba(222,222,222,0.4);
 }
 
 .media-keys-osd .level-bar {
     border-radius: 0.3em;
-    background-color: rgb(116,150,81);
+    background-color: rgba(108,171,205,1.0);
 }
 
 /* ===================================================================

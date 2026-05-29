@@ -285,8 +285,8 @@ StScrollView.hfade {
 
 .popup-separator-menu-item {
   -gradient-height: 1px;
-  -gradient-start: #000000;
-  -gradient-end: #202020;
+  -gradient-start: #242424;
+  -gradient-end: #242424;
   -margin-horizontal: 0;
   height: 1px; }
 
